@@ -6,7 +6,7 @@ At device reset, the default Cortex-M0+ (CM0+) application enables the CM7_0 CPU
 
 [View this README on GitHub.](https://github.com/Infineon/mtb-example-xmc7000-emulated-eeprom)
 
-[Provide feedback on this code example.](https://cypress.co1.qualtrics.com/jfe/form/SV_1NTns53sK2yiljn?Q_EED=eyJVbmlxdWUgRG9jIElkIjoiQ0UyMzUyMjYiLCJTcGVjIE51bWJlciI6IjAwMi0zNTIyNiIsIkRvYyBUaXRsZSI6IlhNQzcwMDAgTUNVOiBFbXVsYXRlZCBFRVBST00iLCJyaWQiOiJ6cWxpIiwiRG9jIHZlcnNpb24iOiIxLjEuMCIsIkRvYyBMYW5ndWFnZSI6IkVuZ2xpc2giLCJEb2MgRGl2aXNpb24iOiJNQ0QiLCJEb2MgQlUiOiJJQ1ciLCJEb2MgRmFtaWx5IjoiUFNPQyJ9)
+[Provide feedback on this code example.](https://cypress.co1.qualtrics.com/jfe/form/SV_1NTns53sK2yiljn?Q_EED=eyJVbmlxdWUgRG9jIElkIjoiQ0UyMzUyMjYiLCJTcGVjIE51bWJlciI6IjAwMi0zNTIyNiIsIkRvYyBUaXRsZSI6IlhNQzcwMDAgTUNVOiBFbXVsYXRlZCBFRVBST00iLCJyaWQiOiJ6cWxpIiwiRG9jIHZlcnNpb24iOiIxLjIuMCIsIkRvYyBMYW5ndWFnZSI6IkVuZ2xpc2giLCJEb2MgRGl2aXNpb24iOiJNQ0QiLCJEb2MgQlUiOiJJQ1ciLCJEb2MgRmFtaWx5IjoiUFNPQyJ9)
 
 ## Requirements
 
@@ -26,6 +26,7 @@ At device reset, the default Cortex-M0+ (CM0+) application enables the CM7_0 CPU
 
 - [XMC7200 evaluation kit](https://www.infineon.com/KIT_XMC72_EVK) (`KIT_XMC72_EVK`) - Default value of `TARGET`
 - [TRAVEO™ T2G body high evaluation kit](https://www.infineon.com/KIT_T2G-B-H_EVK) (`KIT_T2G-B-H_EVK`)
+- [TRAVEO™ T2G body high evaluation kit](https://www.infineon.com/KIT_T2G-B-H_LITE) (`KIT_T2G-B-H_LITE`)
 
 ## Hardware setup
 
@@ -158,7 +159,7 @@ For a list of supported IDEs and more details, see the "Exporting to IDEs" secti
       ```
    </details>
 
-3. After successful programming, open the serial terminal and set the baud rate as 115200. Press the reset button SW1 to see the emulated EEPROM data saving.
+3. After successful programming, open the serial terminal and set the baud rate as 115200. Press the reset button to see the emulated EEPROM data saving.
 
 
 ## Debugging
@@ -229,6 +230,8 @@ Document title: *CE235226* – *XMC7000 MCU: Emulated EEPROM*
  ------- | ---------------------
  1.0.0   | New code example
  1.1.0   | Added support for KIT_T2G-B-H_EVK
+ 1.2.0   | Added support for KIT_T2G-B-H_LITE
+
 <br />
 
 ---------------------------------------------------------
