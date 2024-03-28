@@ -8,7 +8,7 @@
 *
 *
 *******************************************************************************
-* Copyright 2022-2023, Cypress Semiconductor Corporation (an Infineon company) or
+* Copyright 2022-2024, Cypress Semiconductor Corporation (an Infineon company) or
 * an affiliate of Cypress Semiconductor Corporation.  All rights reserved.
 *
 * This software, including source code, documentation and related
@@ -154,6 +154,10 @@ int main(void)
     /* If first byte of EEPROM is not 'P', then write the data for initializing the EEPROM content.*/
     if(ASCII_P != eepromReadArray[0])
     {
+        /* Erase Emulated EEPROM */
+        eepromReturnValue = Cy_Em_EEPROM_Erase(&Em_EEPROM_context);
+        HandleError(eepromReturnValue, "Emulated EEPROM erase failed \r\n");
+ 
         /* Write initial data to EEPROM. */
         eepromReturnValue = Cy_Em_EEPROM_Write(LOGICAL_EEPROM_START,
                                                    eepromWriteArray,
